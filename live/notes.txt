@@ -1,0 +1,47 @@
+Logo font: Segoe UI Semibold, Bold, 35
+Sub-logo: 14px;
+
+
+Sections:
+
+Home Page:
+	NEED: 3 testamonials - 3 or 4 sentences each. Picture of animal would be great.
+	NEED: 2 or 3 sentence intro
+	Links to other sections
+
+About Me
+	The Team
+		Mia
+		Lou
+		Ben		
+
+Services
+	Grooming
+	Taxi Service
+	Playing
+	Puppy Care
+	Training
+
+Fees
+
+Contact Me
+
+
+
+My TODO:
+	Smaller rotating images
+	Clean up border around family pic 
+	Picture of Ben
+	Picture of Lou
+	Fee table
+
+Mia TODO:
+	3 or more testamonials -  3 or 4 sentences each with picture of animal.
+	2-3 sentence intro for home page
+	The "About Me" text is very long. Maybe shorten it
+	4-5 sentence description of each service.
+
+
+
+	
+
