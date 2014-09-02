@@ -21,6 +21,56 @@
    		<script type="text/javascript" src="js/html5.js"></script>
         <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
 	<![endif]-->
+
+<?php
+
+function emailMe($arr,$head) {
+
+    $bad = array("content-type","bcc:","to:","cc:","href","CONTENT-TYPE","BCC:","TO:","CC:","HREF");
+
+    $ip = $_SERVER['REMOTE_ADDR'];
+    $browser = $_SERVER['HTTP_USER_AGENT'];
+    $todayis = date("l, F j, Y, g:i a") ;
+
+    $subject = 'BeniciaPets Contact Form: '.$todayis;
+
+    $message = "$head\n\n\n".
+        "Date: $todayis\n\n".
+        "Ip: $ip\n\n".
+        "Browser: $browser\n\n";
+
+    foreach($arr as $item) {
+        $name = $item[0];
+        $val = $item[1];
+        if($item[2]) {
+            $val = stripcslashes($val);
+            $val = str_replace($bad,"{badstring}",$val);
+        }
+        $message .= "$name: $val\n\n";
+    }
+
+    $headers = 'From: mia@beniciapets.com'."\r\n".
+        'Reply-To: mia@beniciapets.com'."\r\n";
+
+    return mail('mia@beniciapets.com', $subject, $message, $headers);
+
+}
+
+
+$success = false;
+if(!empty($_POST["email"]) || !empty($_POST["message"])) {
+    $arr = array(
+        array('Email',$_POST["email"],true),
+        array('Subject',$_POST["subject"],true),
+        array('Message',$_POST["message"],true)
+    );
+    $success = emailMe($arr,"BeniciaPets.com contact");
+}
+
+
+?>
+
+
 </head>
 <body id="page4">
 	<div class="extra">
