@@ -275,7 +275,7 @@ h6 {color:#000}
 }
 
 .box {
-	width:278px; 
+	width:280px; 
 	background:url(../images/box-tail.gif) 0 0 repeat-x #1896c1;
 }
 	.box .padding {padding:15px 10px 15px 20px}
@@ -442,3 +442,10 @@ footer h4 {color:#fff; margin-bottom:18px}
 	overflow:hidden;
 } 
 html, body {height:100%}
+
+.img-services {
+	width: 280px;
+	height: 148px;
+	border-right: none;
+	border-left: none;
+}
