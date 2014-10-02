@@ -79,7 +79,7 @@ if(!empty($_POST["email"]) || !empty($_POST["message"])) {
         	<div class="row-top">
             	<div class="main">
                 	<div class="wrapper">
-                    	<h1><a href="index2.html">BeniciaPets.com: Au Pair for Pets</a></h1>
+                    	<h1><a href="index.html">BeniciaPets.com: Au Pair for Pets</a></h1>
                     </div>
                 </div>
             </div>
@@ -88,7 +88,7 @@ if(!empty($_POST["email"]) || !empty($_POST["message"])) {
                     <div class="main">
                         <nav class="indent-left">
                             <ul class="menu wrapper">
-                                <li><a href="index2.html">Home</a></li>
+                                <li><a href="index.html">Home</a></li>
                                 <li><a href="about.html">About Me</a></li>
 								<li><a href="services.html">Services</a></li>
                                 <li><a href="rates.html">Rates</a></li>
